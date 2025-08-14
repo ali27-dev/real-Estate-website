@@ -22,10 +22,10 @@ export default function Hero() {
             </div>
             {/* hero-description */}
             <div className="flex-col-start hero-description">
-              <span>
+              <span className="secondary-text">
                 Find a variety of properties that suit you very easilty
               </span>
-              <span>
+              <span className="secondary-text">
                 Forget all difficulties in finding a residence for you
               </span>
             </div>
@@ -36,6 +36,34 @@ export default function Hero() {
               <button className="button">
                 <a href="">Search</a>
               </button>
+            </div>
+
+            {/* hero-state */}
+            <div className="states flex-center">
+              {/* hero-state-1 */}
+              <div className="state flex-col-center ">
+                <span>
+                  <CountUp start={8800} end={9000} duration={4} />
+                  <span>+</span>
+                </span>
+                <span className="secondary-text">Premium Product</span>
+              </div>
+              {/* hero-state-2 */}
+              <div className="state flex-col-center">
+                <span>
+                  <CountUp start={1950} end={2000} duration={4} />
+                  <span>+</span>
+                </span>
+                <span className="secondary-text">Happy Customer</span>
+              </div>
+              {/* hero-state-3 */}
+              <div className="state flex-col-center ">
+                <span>
+                  <CountUp end={28} />
+                  <span>+</span>
+                </span>
+                <span className="secondary-text">Awards Winning</span>
+              </div>
             </div>
           </div>
           {/* RIGHT-SIDE */}

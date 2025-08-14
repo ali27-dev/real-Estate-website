@@ -2,7 +2,7 @@
   color: white;
   position: relative;
   padding-bottom: 3.2rem;
-  background-color: var(--black);
+  /* background-color: var(--black); */
 }
 
 .hero-container {
@@ -11,10 +11,7 @@
   align-items: flex-end;
 }
 .hero-description {
-  font-size: 2.4rem;
-  line-height: 1.6;
-  margin-bottom: 2.4rem;
-  color: #8c8b8b;
+  margin-bottom: 3.2rem;
 }
 .hero-title {
   position: relative;
@@ -45,6 +42,18 @@
   border: none;
   outline: none;
 }
+.states {
+  margin-top: 2.4rem;
+  width: 100%;
+  justify-content: space-between;
+}
+.state > :nth-child(1) {
+  font-size: 3.2rem;
+}
+.state > :nth-child(1) > :last-child {
+  color: orange;
+}
+/* right-side */
 .image-container {
   width: 48rem; /*480px*/
   height: 56rem; /*560px*/
