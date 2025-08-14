@@ -1,5 +1,7 @@
 import React from "react";
 import "./Hero.css";
+import { HiLocationMarker } from "react-icons/hi";
+import CountUp from "react-countup";
 
 export default function Hero() {
   return (
@@ -28,7 +30,13 @@ export default function Hero() {
               </span>
             </div>
             {/* hero-search-bar */}
-            <div className="hero-search">Search Bar</div>
+            <div className="flex-center hero-search-bar">
+              <HiLocationMarker color="var(--blue)" size={30} />
+              <input type="text" placeholder="Search For Reasult" />
+              <button className="button">
+                <a href="">Search</a>
+              </button>
+            </div>
           </div>
           {/* RIGHT-SIDE */}
           <div className="hero--right">
