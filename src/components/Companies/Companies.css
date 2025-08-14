@@ -1,0 +1,9 @@
+/* .c-wrapper {
+} */
+.c-container {
+  justify-content: space-around;
+  gap: 1.6rem;
+}
+.c-container > img {
+  width: 14rem;
+}
