@@ -3,12 +3,13 @@ import { Swiper, useSwiperSlide, useSwiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "./Residences.css";
 import Data from "../../utils/slider.json";
+import { sliderSettings } from "../../utils/Common";
 
 export default function Residences() {
   return (
-    <div>
-      <section className="rwrapper">
-        <div className="r-container  paddings inner-width">
+    <>
+      <section className="r-wrapper">
+        <div className="r-container paddings inner-width">
           <div className="r-header flex-start">
             <h3>
               <span className="orange-text">Best Choices</span>
@@ -17,18 +18,19 @@ export default function Residences() {
             </h3>
           </div>
 
-          <Swiper>
+          <Swiper {...sliderSettings}>
+            <SliderButtons />
             {Data.map((card, i) => (
               <SwiperSlide key={i}>
                 <figcaption className="r-card">
                   <img src={card.image} alt="" />
                   {/* text */}
-                  <caption className="secondary-text r-price">
+                  <figure className="secondary-text r-price">
                     <span className="" style={{ color: "orange" }}>
                       $
                     </span>
                     <span>{card.price}</span>
-                  </caption>
+                  </figure>
                   {/* Names && Detailes*/}
                   <h4 className="primary-text">{card.name}</h4>
                   <p className="secondary-text">{card.detail}</p>
@@ -38,6 +40,16 @@ export default function Residences() {
           </Swiper>
         </div>
       </section>
-    </div>
+    </>
   );
 }
+
+const SliderButtons = () => {
+  const swiper = useSwiper();
+  return (
+    <div className="flex-center r-buttons">
+      <button onClick={() => swiper.slidePrev()}>&lt;</button>
+      <button onClick={() => swiper.slideNext()}>&gt;</button>
+    </div>
+  );
+};
