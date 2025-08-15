@@ -3,6 +3,8 @@ import Hero from "./components/Hero/Hero.jsx";
 import "./App.css";
 import Companies from "./components/Companies/Companies.jsx";
 import Residences from "./components/Residences/Residences.jsx";
+import Value from "./components/Values/Value.jsx";
+
 function App() {
   return (
     <div className="App">
@@ -13,6 +15,7 @@ function App() {
       </div>
       <Companies />
       <Residences />
+      <Value />
     </div>
   );
 }
