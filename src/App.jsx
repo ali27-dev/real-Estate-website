@@ -4,7 +4,7 @@ import "./App.css";
 import Companies from "./components/Companies/Companies.jsx";
 import Residences from "./components/Residences/Residences.jsx";
 import Value from "./components/Values/Value.jsx";
-
+import Contact from "./components/Contact/Contact.jsx";
 function App() {
   return (
     <div className="App">
@@ -16,6 +16,7 @@ function App() {
       <Companies />
       <Residences />
       <Value />
+      <Contact />
     </div>
   );
 }
