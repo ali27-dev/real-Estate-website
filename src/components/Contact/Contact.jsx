@@ -1,5 +1,4 @@
 import { MdCall } from "react-icons/md";
-import { FaVideo } from "react-icons/fa";
 import { HiChatBubbleBottomCenterText } from "react-icons/hi2";
 import { FaGithub } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io5";
