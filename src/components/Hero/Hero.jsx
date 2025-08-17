@@ -2,6 +2,7 @@ import React from "react";
 import "./Hero.css";
 import { HiLocationMarker } from "react-icons/hi";
 import CountUp from "react-countup";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
@@ -14,11 +15,16 @@ export default function Hero() {
             <div className="heading-primary hero-title ">
               {/* otage-circle */}
               <div className="orange-circle" />
-              <h1 className="heading-primary ">
+              <motion.h1
+                initial={{ y: "2rem", opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 2, type: "spring" }}
+                className="heading-primary "
+              >
                 Discover <br />
                 Most Suitable <br />
                 Property
-              </h1>
+              </motion.h1>
             </div>
             {/* hero-description */}
             <div className="flex-col-start hero-description">
@@ -68,9 +74,14 @@ export default function Hero() {
           </div>
           {/* RIGHT-SIDE */}
           <div className="hero-right">
-            <div className="flex-center image-container">
+            <motion.div
+              initial={{ x: "7rem", opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 2, type: "spring" }}
+              className="flex-center image-container"
+            >
               <img src="./hero-image.png" alt="" />
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
