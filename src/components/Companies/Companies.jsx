@@ -3,7 +3,7 @@ export default function Companies() {
   return (
     <div>
       <section className="c-wrapper">
-        <div className="c-container flex-center inner-width paddings">
+        <div className="c-container flex-center inner-width paddings center">
           <img
             src="./prologis.png"
             alt="the image is about pro-logis company"

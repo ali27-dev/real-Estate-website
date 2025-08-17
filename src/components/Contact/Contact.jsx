@@ -6,10 +6,10 @@ import "./Contact.css";
 
 export default function Contect() {
   return (
-    <section className="c-wrapper">
-      <div className="paddings inner-width flex-center c-container">
+    <section className="contact-wrapper">
+      <div className="paddings inner-width flex-center contact-container">
         {/* left */}
-        <div className="c-left flex-col-start">
+        <div className="contact-left flex-col-start">
           <h3 className="orange-text">Our Contact Us</h3>
           <h2 className="primary-text">Easy to contact us</h2>
           <p className="secondary-text">
@@ -123,7 +123,7 @@ export default function Contect() {
           {/* contacts-box-end */}
         </div>
         {/* right */}
-        <div className="c-right">
+        <div className="contact-right flex-center">
           <div className="image-container">
             <img src="./contact.jpg" alt="" />
           </div>

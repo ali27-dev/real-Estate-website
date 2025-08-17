@@ -16,3 +16,14 @@
   font-size: 1.6rem;
   font-weight: 600;
 }
+
+@media (max-width: 1024px) {
+  .f-container {
+    margin: 4rem 0;
+    justify-content: center;
+  }
+  .f-container > div {
+    align-items: center !important;
+    text-align: center;
+  }
+}

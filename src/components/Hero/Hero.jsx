@@ -9,7 +9,7 @@ export default function Hero() {
       <section className="hero-wrapper">
         <div className="hero-container flex-center inner-width paddings">
           {/* LIFT-SIDE */}
-          <div className="flex-col-start hero--left">
+          <div className="flex-col-start hero-left">
             {/* hero-title */}
             <div className="heading-primary hero-title ">
               {/* otage-circle */}
@@ -31,9 +31,9 @@ export default function Hero() {
             </div>
             {/* hero-search-bar */}
             <div className="flex-center hero-search-bar">
-              <HiLocationMarker color="var(--blue)" size={30} />
+              <HiLocationMarker color="var(--blue)" size={25} />
               <input type="text" placeholder="Search For Reasult" />
-              <button className="button">
+              <button className="button search-btn">
                 <a href="">Search</a>
               </button>
             </div>
@@ -67,7 +67,7 @@ export default function Hero() {
             </div>
           </div>
           {/* RIGHT-SIDE */}
-          <div className="hero--right">
+          <div className="hero-right">
             <div className="flex-center image-container">
               <img src="./hero-image.png" alt="" />
             </div>

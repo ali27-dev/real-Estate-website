@@ -1,15 +1,15 @@
-.c-container {
+.contact-wrapper {
+  background-color: white;
+}
+.contact-container {
   justify-content: space-between;
 }
-.c-container > div {
+.contact-container > div {
   flex: 1;
 }
 
-.c-left {
+.contact-left {
   gap: 0.8rem;
-}
-.c-right {
-  width: 100%;
 }
 
 .contact-modes {
@@ -70,3 +70,26 @@
   padding: 5px;
   border: 2px solid black;
 } */
+
+@media (max-width: 1024px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-modes {
+    width: 100%;
+  }
+  .row {
+    flex-direction: column;
+    width: 100%;
+  }
+  .mode {
+    width: 100%;
+  }
+  @media (max-width: 640px) {
+    .contact-right > .image-container {
+      border: 6px solid rgba(128, 128, 128, 0.135);
+      width: 100%;
+    }
+  }
+}
