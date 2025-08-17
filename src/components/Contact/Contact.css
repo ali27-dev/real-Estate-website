@@ -28,9 +28,7 @@
   transition: all 300ms ease-in;
 }
 
-.mode .button,
-.button > a {
-  text-decoration: none;
+.mode .button {
   width: 100%;
   gap: 1.44rem;
   background: var(--light-blue);
@@ -38,13 +36,14 @@
   font-size: 1.44rem;
   font-weight: 600;
 }
-
+.mode .button .c-link {
+  font-size: 1.44rem;
+}
 .mode > :nth-child(1) {
   width: 100%;
   gap: 2.56rem;
 }
-.mode .detail .primary-text,
-.primary-text {
+.mode .detail .primary-text {
   font-size: 1.76rem;
   font-weight: 600;
 }

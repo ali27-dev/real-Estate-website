@@ -61,7 +61,7 @@ export default function Contect() {
                   <a
                     href="https://github.com/"
                     target="_blank"
-                    className="flex-center"
+                    className="flex-center c-link"
                   >
                     Visit Now
                   </a>
@@ -111,7 +111,7 @@ export default function Contect() {
                   <a
                     href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"
                     target="_blank"
-                    className="flex-center"
+                    className="flex-center c-link"
                   >
                     Visit Now
                   </a>
